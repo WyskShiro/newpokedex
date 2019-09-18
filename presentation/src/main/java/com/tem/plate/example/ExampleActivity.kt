@@ -12,7 +12,6 @@ import com.ufms.mediadorpedagogico.databinding.ActivityRegisterBinding
 import com.ufms.mediadorpedagogico.domain.extensions.defaultSched
 import com.ufms.mediadorpedagogico.domain.interactor.user.InvalidFieldsException
 import com.ufms.mediadorpedagogico.presentation.util.extensions.*
-import com.ufms.mediadorpedagogico.presentation.util.mask.InputMask
 import com.ufms.mediadorpedagogico.presentation.util.resources.SchedulerProvider
 import com.ufms.mediadorpedagogico.presentation.util.structure.base.BaseActivity
 import com.ufms.mediadorpedagogico.presentation.util.structure.base.BaseViewModel
@@ -22,13 +21,13 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.rxkotlin.subscribeBy
 import org.koin.android.ext.android.inject
 
-class SignUpActivity : BaseActivity() {
+class ExampleActivity : BaseActivity() {
 
     override val baseViewModel: BaseViewModel get() = viewModel
 
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var rxPermissions: RxPermissions
-    private val viewModel: SignUpViewModel by inject()
+    private val viewModel: ExampleViewModel by inject()
     private val schedulerProvider: SchedulerProvider by inject()
     private var avatarDisposable: Disposable? = null
 
@@ -156,7 +155,7 @@ class SignUpActivity : BaseActivity() {
         private const val FIELD_PASSWORD_CONFIRMATION = 6
 
         fun createIntent(context: Context): Intent {
-            return Intent(context, SignUpActivity::class.java)
+            return Intent(context, ExampleActivity::class.java)
         }
     }
 }

@@ -4,8 +4,8 @@ import android.content.Context
 import android.content.Intent
 import com.ufms.mediadorpedagogico.presentation.util.structure.navigation.NavData
 
-class SignUpNavData : NavData {
+class ExampleNavdata : NavData {
     override fun createIntent(context: Context): Intent {
-        return SignUpActivity.createIntent(context)
+        return ExampleActivity.createIntent(context)
     }
 }

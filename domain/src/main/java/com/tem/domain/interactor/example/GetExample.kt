@@ -4,11 +4,11 @@ import com.ufms.mediadorpedagogico.domain.boundary.NoticeRepository
 import com.ufms.mediadorpedagogico.domain.entity.notice.NoticeContent
 import io.reactivex.Single
 
-class GetNotice constructor(
-    private val repository: NoticeRepository
+class GetExample constructor(
+    private val repository: ExampleRepository
 ) {
 
-    fun execute(pageNumber: Int): Single<NoticeContent> {
-        return repository.getNoticeList(pageNumber)
+    fun execute(): Single<NoticeContent> {
+        return repository.getSomething(pageNumber)
     }
 }
