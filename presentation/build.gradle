@@ -71,14 +71,8 @@ dependencies {
     //rx binding
     implementation "com.jakewharton.rxbinding3:rxbinding:$rxBindingVersion"
 
-    // dagger
-    implementation "com.google.dagger:dagger:$daggerVersion"
-    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
-
-    // dagger android
-    implementation "com.google.dagger:dagger-android:$daggerVersion"
-    implementation "com.google.dagger:dagger-android-support:$daggerVersion"
-    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
+    implementation "org.koin:koin-core:$koinVersion"
+    implementation "org.koin:koin-android-viewmodel:$koinVersion"
 
     // multidex
     implementation 'androidx.multidex:multidex:2.0.1'

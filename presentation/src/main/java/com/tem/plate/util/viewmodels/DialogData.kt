@@ -1,6 +1,6 @@
-package com.ufms.mediadorpedagogico.presentation.util.viewmodels
+package com.tem.plate.util.viewmodels
 
-import com.ufms.mediadorpedagogico.domain.boundary.resources.StringsProvider
+import com.tem.domain.resources.StringsProvider
 
 class DialogData(
     val title: String,

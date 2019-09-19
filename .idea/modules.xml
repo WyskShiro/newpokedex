@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Template.iml" filepath="$PROJECT_DIR$/Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/android_template-lib.iml" filepath="$PROJECT_DIR$/lib/android_template-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/domain/domain.iml" filepath="$PROJECT_DIR$/domain/domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />

@@ -1,10 +1,9 @@
-package com.ufms.mediadorpedagogico.presentation
-
+package com.tem.plate
 import androidx.multidex.MultiDexApplication
-import com.ufms.mediadorpedagogico.presentation.util.structure.dependecyinjector.applicationModule
-import com.ufms.mediadorpedagogico.presentation.util.structure.dependecyinjector.interactorModule
-import com.ufms.mediadorpedagogico.presentation.util.structure.dependecyinjector.repositoryModule
-import com.ufms.mediadorpedagogico.presentation.util.structure.dependecyinjector.viewModelModule
+import com.tem.plate.util.structure.dependecyinjector.applicationModule
+import com.tem.plate.util.structure.dependecyinjector.interactorModule
+import com.tem.plate.util.structure.dependecyinjector.repositoryModule
+import com.tem.plate.util.structure.dependecyinjector.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

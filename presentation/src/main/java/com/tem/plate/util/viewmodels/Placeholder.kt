@@ -1,5 +1,4 @@
-package com.ufms.mediadorpedagogico.presentation.util.viewmodels
-
+package com.tem.plate.util.viewmodels
 
 sealed class Placeholder(
     val messageVisible: Boolean,

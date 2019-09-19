@@ -1,5 +1,6 @@
 package com.tem.plate.util.extensions
 
+import com.tem.plate.util.viewmodels.Placeholder
 import com.ufms.mediadorpedagogico.domain.extensions.defaultConsumers
 import com.ufms.mediadorpedagogico.presentation.util.viewmodels.Placeholder
 import io.reactivex.Observable

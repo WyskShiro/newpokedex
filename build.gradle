@@ -34,6 +34,7 @@ buildscript {
         retrofitVersion = '2.4.0'
         retroFitRxJavaAdapterVersion = '1.0.0'
         archLifecycleVersion = '1.1.1'
+        koinVersion = '2.0.1'
     }
 
     repositories {

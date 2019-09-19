@@ -1,4 +1,4 @@
-package com.ufms.mediadorpedagogico.presentation.util.structure.navigation
+package com.tem.plate.util.structure.navigation
 
 import android.content.Context
 import android.content.Intent

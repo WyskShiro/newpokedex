@@ -1,11 +1,7 @@
-package com.ufms.mediadorpedagogico.presentation.util.structure.base
+package com.tem.plate.util.structure.base
 
 import androidx.lifecycle.*
-import com.ufms.mediadorpedagogico.presentation.util.ErrorHandler
-import com.ufms.mediadorpedagogico.presentation.util.structure.arch.Event
-import com.ufms.mediadorpedagogico.presentation.util.structure.navigation.NavData
-import com.ufms.mediadorpedagogico.presentation.util.viewmodels.DialogData
-import com.ufms.mediadorpedagogico.presentation.util.viewmodels.Placeholder
+import com.tem.plate.util.structure.arch.Event
 import io.reactivex.disposables.CompositeDisposable
 import org.koin.core.KoinComponent
 import org.koin.core.inject

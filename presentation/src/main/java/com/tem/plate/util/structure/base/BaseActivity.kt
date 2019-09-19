@@ -1,15 +1,11 @@
-package com.ufms.mediadorpedagogico.presentation.util.structure.base
+package com.tem.plate.util.structure.base
 
 import android.app.Dialog
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import com.ufms.mediadorpedagogico.presentation.util.extensions.observeEvent
-import com.ufms.mediadorpedagogico.presentation.util.extensions.shortToast
-import com.ufms.mediadorpedagogico.presentation.util.extensions.showDialog
-import com.ufms.mediadorpedagogico.presentation.util.structure.navigation.NavData
-import com.ufms.mediadorpedagogico.presentation.util.structure.navigation.Navigator
-import com.ufms.mediadorpedagogico.presentation.util.viewmodels.DialogData
+import com.tem.plate.util.extensions.observeEvent
+import com.tem.plate.util.structure.navigation.Navigator
 
 abstract class BaseActivity : AppCompatActivity() {
 

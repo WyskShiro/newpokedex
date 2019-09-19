@@ -1,4 +1,4 @@
-package com.ufms.mediadorpedagogico.presentation.util.structure.arch
+package com.tem.plate.util.structure.arch
 
 
 /**

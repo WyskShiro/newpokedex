@@ -1,16 +1,17 @@
-package com.ufms.mediadorpedagogico.presentation.util
-
+package com.tem.plate.util
+import com.tem.domain.resources.StringsProvider
+import com.tem.plate.util.viewmodels.DialogData
+import com.tem.plate.util.viewmodels.Placeholder
 import com.ufms.mediadorpedagogico.data.remote.client.RequestException
 import com.ufms.mediadorpedagogico.domain.boundary.resources.Logger
 import com.ufms.mediadorpedagogico.domain.boundary.resources.StringsProvider
 import com.ufms.mediadorpedagogico.presentation.util.resources.LoginAction
 import com.ufms.mediadorpedagogico.presentation.util.viewmodels.DialogData
 import com.ufms.mediadorpedagogico.presentation.util.viewmodels.Placeholder
+import java.util.logging.Logger
 
 class ErrorHandler constructor(
-    private val strings: StringsProvider,
-    private val logger: Logger,
-    private val loginAction: LoginAction
+    private val strings: StringsProvider
 ) {
 
 
