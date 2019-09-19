@@ -4,8 +4,8 @@ import android.content.Context
 import android.content.Intent
 import com.ufms.mediadorpedagogico.presentation.util.structure.navigation.NavData
 
-class ExampleNavdata : NavData {
+class FruitNavData : NavData {
     override fun createIntent(context: Context): Intent {
-        return ExampleActivity.createIntent(context)
+        return FruitActivity.createIntent(context)
     }
 }

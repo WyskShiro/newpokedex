@@ -1,4 +1,4 @@
-package com.ufms.mediadorpedagogico.presentation.util.resources
+package com.tem.plate.util.resources
 
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers

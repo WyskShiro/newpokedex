@@ -1,4 +1,4 @@
-package com.ufms.mediadorpedagogico.presentation.util.extensions
+package com.tem.plate.util.extensions
 
 import com.ufms.mediadorpedagogico.domain.extensions.defaultConsumers
 import com.ufms.mediadorpedagogico.presentation.util.viewmodels.Placeholder

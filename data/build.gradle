@@ -4,7 +4,7 @@ apply plugin: 'kotlin-kapt'
 
 repositories {
     mavenCentral()
-    maven { url "https://jitpack.io" }
+    maven { url "http://dl.bintray.com/daividssilverio/maven" }
 }
 
 android {
@@ -20,22 +20,22 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
+            buildConfigField "String", "API_ENDPOINT", "\"$rootProject.ext.apiURL\""
         }
 
         staging {
-            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
+            buildConfigField "String", "API_ENDPOINT", "\"$rootProject.ext.apiURL\""
         }
 
         debug {
-            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
+            buildConfigField "String", "API_ENDPOINT", "\"$rootProject.ext.apiURL\""
         }
     }
 }
@@ -46,10 +46,15 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     api "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$retroFitRxJavaAdapterVersion"
-    api "com.squareup.okhttp3:logging-interceptor:$logginInterceptorVersion"
 
     // rx android
     api "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
 
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    // room
+    kapt 'androidx.room:room-compiler:2.0.0'
+    api 'androidx.room:room-runtime:2.0.0'
+    implementation 'androidx.room:room-rxjava2:2.0.0'
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
 }
+

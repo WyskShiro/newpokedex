@@ -1,2 +1,2 @@
-include ':presentation', ':data', ':domain'
+include ':presentation', ':data', ':lib', ':domain'
 rootProject.name='Template'

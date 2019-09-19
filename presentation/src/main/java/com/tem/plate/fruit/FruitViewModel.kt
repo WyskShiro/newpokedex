@@ -13,7 +13,7 @@ import com.ufms.mediadorpedagogico.presentation.util.structure.base.BaseViewMode
 import io.reactivex.rxkotlin.subscribeBy
 import java.io.File
 
-class ExampleViewModel(
+class FruitViewModel(
     private val signUp: SignUp,
     private val schedulerProvider: SchedulerProvider
 ) : BaseViewModel() {

@@ -21,13 +21,13 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.rxkotlin.subscribeBy
 import org.koin.android.ext.android.inject
 
-class ExampleActivity : BaseActivity() {
+class FruitActivity : BaseActivity() {
 
     override val baseViewModel: BaseViewModel get() = viewModel
 
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var rxPermissions: RxPermissions
-    private val viewModel: ExampleViewModel by inject()
+    private val viewModel: FruitViewModel by inject()
     private val schedulerProvider: SchedulerProvider by inject()
     private var avatarDisposable: Disposable? = null
 
@@ -155,7 +155,7 @@ class ExampleActivity : BaseActivity() {
         private const val FIELD_PASSWORD_CONFIRMATION = 6
 
         fun createIntent(context: Context): Intent {
-            return Intent(context, ExampleActivity::class.java)
+            return Intent(context, FruitActivity::class.java)
         }
     }
 }

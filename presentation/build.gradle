@@ -6,6 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 repositories {
     mavenCentral()
     maven { url "https://jitpack.io" }
+    maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
 }
 
 android {
@@ -13,11 +14,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-
     dataBinding {
         enabled = true
     }
@@ -25,11 +21,12 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.tem.plate"
+        applicationId "br.com.contabileasy"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
+        testInstrumentationRunner "androidx.menu_revenue_types.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
     }
@@ -38,15 +35,17 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
+            buildConfigField "String", "API_ENDPOINT", "\"$rootProject.ext.apiURL\""
         }
 
         staging {
-            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
+            applicationIdSuffix ".staging"
+            buildConfigField "String", "API_ENDPOINT", "\"$rootProject.ext.apiURL\""
         }
 
         debug {
-            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
+            applicationIdSuffix ".debug"
+            buildConfigField "String", "API_ENDPOINT", "\"$rootProject.ext.apiURL\""
         }
     }
 }
@@ -58,31 +57,41 @@ dependencies {
     implementation project(":data")
 
     // android support
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'com.google.android.material:material:1.0.0'
 
     // rx
     implementation "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
     implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$rxJava2AdapterVersion"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$rxJava2AdapterVersion"
 
     //rx permissions
     implementation "com.github.tbruyelle:rxpermissions:$rxPermissionVersion"
 
-    // koin
-    implementation "org.koin:koin-core:$koinVersion"
-    implementation "org.koin:koin-android-viewmodel:$koinVersion"
+    //rx binding
+    implementation "com.jakewharton.rxbinding3:rxbinding:$rxBindingVersion"
+
+    // dagger
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    // dagger android
+    implementation "com.google.dagger:dagger-android:$daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
 
     // multidex
     implementation 'androidx.multidex:multidex:2.0.1'
 
     // kotlin
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 
     // LiveData + ViewModel
-    api 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    api 'androidx.lifecycle:lifecycle-extensions:2.0.0'
 
     // glide
     implementation "com.github.bumptech.glide:glide:$glideVersion"
     kapt "com.github.bumptech.glide:compiler:$glideVersion"
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

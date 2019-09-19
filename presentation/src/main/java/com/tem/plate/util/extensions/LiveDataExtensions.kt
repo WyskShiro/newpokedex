@@ -1,9 +1,8 @@
-package com.ufms.mediadorpedagogico.presentation.util.extensions
+package com.tem.plate.util.extensions
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Transformations
 import com.ufms.mediadorpedagogico.presentation.util.structure.arch.Event
 import com.ufms.mediadorpedagogico.presentation.util.structure.arch.EventObserver
 
@@ -20,5 +19,3 @@ fun <T> LiveData<T>.observe(owner: LifecycleOwner, observer: (T?) -> Unit) {
 fun <T> LiveData<Event<T>>.observeEvent(owner: LifecycleOwner, observer: (T?) -> Unit) {
     observe(owner, EventObserver(observer))
 }
-
-fun <T, U> LiveData<T>.map(mapper: (T?) -> U) = Transformations.map(this, mapper)

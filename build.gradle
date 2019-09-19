@@ -5,10 +5,10 @@ buildscript {
     ext {
 
         // App configs
-        appName = "Example"
+        appName = "Template"
         versionCode = 1
         versionName = "1.0"
-        apiURL = "http://example.com"
+        apiURL = "https://fruits.com"
 
         // Sdk and tools
         buildToolsVersion = '27.0.3'
@@ -17,8 +17,9 @@ buildscript {
         targetSdkVersion = 28
 
         // App dependencies
+        daggerVersion = '2.20'
         glideVersion = '4.4.0'
-        gradleVersion = '3.4.0'
+        gradleVersion = '3.5.0'
         kotlinVersion = '1.3.41'
         supportVersion = '28.0.0'
         sthetoVersion = '1.5.0'
@@ -28,12 +29,11 @@ buildscript {
         rxAndroidVersion = '2.1.0'
         rxKotlinVersion = '2.1.0'
         rxPermissionVersion = '0.10.2'
-        rxJava2AdapterVersion = '2.6.0'
+        rxJava2AdapterVersion = '1.0.0'
+        rxBindingVersion = '3.0.0'
         retrofitVersion = '2.4.0'
-        logginInterceptorVersion = '3.10.0'
         retroFitRxJavaAdapterVersion = '1.0.0'
         archLifecycleVersion = '1.1.1'
-        koinVersion = '2.0.1'
     }
 
     repositories {
@@ -45,8 +45,6 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$gradleVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 

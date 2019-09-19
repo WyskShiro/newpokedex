@@ -1,26 +1,30 @@
-package com.tem.domain.api
+package com.tem.data.api
 
-import com.tem.domain.BuildConfig
+import com.google.gson.GsonBuilder
+import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
+import com.tem.data.BuildConfig
+import com.tem.data.entity.ApiFruit
+import io.reactivex.Completable
+import io.reactivex.Single
+import io.reactivex.SingleTransformer
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiClient {
 
-    private const val apiEndpoint = BuildConfig.API_ENDPOINT
+    private const val apiURL = BuildConfig.API_URL
     private lateinit var retrofit: Retrofit
-    private lateinit var authInterceptor: AuthInterceptor
     private var apiServiceSingleton: ApiService? = null
 
     private val apiServices: ApiService get() = apiServiceSingleton ?: buildApiServices()
 
-    fun signIn(classKey: String, name: String): Single<ApiUser> {
-        return makeRequest(apiServices.signIn(classKey, name))
+    fun getFruit(): Single<ApiFruit> {
+        return makeRequest(apiServices.getFruit())
     }
 
-    fun getListOfHomework(pageNumber: Int): Single<ApiHomeworkContent> {
-        return makeRequest(apiServices.getListOfHomework(pageNumber))
-    }
-
-    fun getListOfNotice(pageNumber: Int): Single<ApiNoticeContent> {
-        return makeRequest(apiServices.getListOfNotices(pageNumber))
+    fun postFruit(apiFruit: ApiFruit): Completable {
+        return justVerifyErrors(apiServices.postFruit(apiFruit))
     }
 
     /**
@@ -31,15 +35,12 @@ object ApiClient {
      **/
 
     private fun buildApiServices(): ApiService {
-        val okHttpClientBuilder = okHttpClientBuilder()
         retrofit = Retrofit.Builder()
-            .client(okHttpClientBuilder.build())
-            .baseUrl(apiEndpoint)
+            .baseUrl(apiURL)
             .addConverterFactory(
                 GsonConverterFactory.create(
                     GsonBuilder()
                         .serializeNulls()
-                        .setDateFormat(DateFormat.FULL)
                         .create()
                 )
             )
@@ -51,17 +52,6 @@ object ApiClient {
             return this
         }
     }
-
-    private fun okHttpClientBuilder(): OkHttpClient.Builder {
-        authInterceptor = AuthInterceptor()
-        val okHttpClientBuilder = OkHttpClient.Builder()
-        okHttpClientBuilder.addInterceptor(HttpLoggingInterceptor().setLevel(resolveLevelInterceptor()))
-        okHttpClientBuilder.addInterceptor(authInterceptor)
-        return okHttpClientBuilder
-    }
-
-    private fun resolveLevelInterceptor() =
-        if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE
 
     private fun <T> verifyResponseException(): SingleTransformer<Response<T>, Response<T>> {
         return SingleTransformer { upstream ->
@@ -102,23 +92,5 @@ object ApiClient {
         return request.compose(verifyResponseException())
             .compose(verifyRequestException())
             .ignoreElement()
-    }
-
-    private fun buildSignUpMultipartBody(fields: Map<String, String?>): MultipartBody {
-        val builder = MultipartBody.Builder().setType(MultipartBody.FORM)
-        for ((key, value) in fields) {
-            if ("avatar" == key) {
-                if (value == null) continue
-                val file = File(value)
-                builder.addFormDataPart(
-                    key,
-                    file.name,
-                    RequestBody.create(MediaType.parse("image/*"), file)
-                )
-            } else {
-                value?.let { builder.addFormDataPart(key, value) }
-            }
-        }
-        return builder.build()
     }
 }

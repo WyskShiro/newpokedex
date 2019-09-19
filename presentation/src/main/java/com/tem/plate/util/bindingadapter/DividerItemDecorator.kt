@@ -1,4 +1,4 @@
-package com.ufms.mediadorpedagogico.presentation.util.bindingadapter
+package com.tem.plate.util.bindingadapter
 
 import android.graphics.Canvas
 import android.graphics.drawable.Drawable

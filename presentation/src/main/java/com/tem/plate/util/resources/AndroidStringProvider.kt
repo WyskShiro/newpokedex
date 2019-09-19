@@ -1,9 +1,9 @@
-package com.ufms.mediadorpedagogico.presentation.util.resources
+package com.tem.plate.util.resources
 
 import android.content.Context
 import androidx.annotation.StringRes
-import com.ufms.mediadorpedagogico.R
-import com.ufms.mediadorpedagogico.domain.boundary.resources.StringsProvider
+import com.tem.domain.resources.StringsProvider
+import com.tem.plate.R
 
 class AndroidStringProvider(context: Context) : StringsProvider {
 
