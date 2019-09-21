@@ -5,10 +5,10 @@ buildscript {
     ext {
 
         // App configs
-        appName = "Template"
+        appName = "New Pokedex"
         versionCode = 1
         versionName = "1.0"
-        apiURL = "https://fruits.com"
+        apiURL = "https://pokeapi.co/api/v2/"
 
         // Sdk and tools
         buildToolsVersion = '27.0.3'

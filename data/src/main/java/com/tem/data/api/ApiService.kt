@@ -1,10 +1,9 @@
 package com.tem.data.api
 
-import com.tem.data.entity.ApiFruit
+import com.tem.data.entity.ApiResult
 import io.reactivex.Single
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.POST
 import retrofit2.http.Query
 
 /**
@@ -13,12 +12,12 @@ import retrofit2.http.Query
 interface ApiService {
 
     /**
-     * ApiFruit
+     * Pokemon
      * */
 
-    @GET("fruit")
-    fun getFruit(): Single<Response<ApiFruit>>
-
-    @POST("apiFruit")
-    fun postFruit(@Query("apiFruit") apiFruit: ApiFruit): Single<Response<Void>>
+    @GET("pokemon")
+    fun getPokemonList(
+        @Query("limit") limit: Int?,
+        @Query("offset") offset: Int?
+    ): Single<Response<ApiResult>>
 }

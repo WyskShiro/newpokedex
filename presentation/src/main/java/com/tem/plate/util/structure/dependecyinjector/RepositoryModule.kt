@@ -1,9 +1,9 @@
 package com.tem.plate.util.structure.dependecyinjector
 
-import com.tem.data.repository.DefaultFruitRepository
-import com.tem.domain.boundary.FruitRepository
+import com.tem.data.repository.DefaultPokemonRepository
+import com.tem.domain.boundary.PokemonRepository
 import org.koin.dsl.module
 
 val repositoryModule = module {
-    factory<FruitRepository> { DefaultFruitRepository(get()) }
+    factory<PokemonRepository> { DefaultPokemonRepository(get()) }
 }
