@@ -1,4 +1,4 @@
-# android_template
+# "Small" Template for simple applications
 Template using Data, Domain and Presentation
 
 Uses RxJava for asynchronous calls with Retrofit
