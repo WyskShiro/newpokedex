@@ -1,6 +1,6 @@
 package com.tem.plate.util.viewmodels
 
-import com.tem.domain.resources.StringsProvider
+import com.tem.domain.util.StringsProvider
 
 class DialogData(
     val title: String,
@@ -52,7 +52,7 @@ class DialogData(
             cancelable: Boolean? = true
         ): DialogData {
             return DialogData(
-                strings.errorTitle,
+                "TITLE",
                 message,
                 confirmButtonText,
                 onConfirm,
@@ -73,9 +73,9 @@ class DialogData(
             return DialogData(
                 title,
                 message,
-                strings.globalYes,
+                "CONFIRM",
                 onConfirm,
-                strings.globalNo,
+                "CANCEL",
                 onDismiss,
                 cancelable
             )

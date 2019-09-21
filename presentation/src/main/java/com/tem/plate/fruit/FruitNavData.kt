@@ -1,8 +1,8 @@
-package com.ufms.mediadorpedagogico.presentation.signup
+package com.tem.plate.fruit
 
 import android.content.Context
 import android.content.Intent
-import com.ufms.mediadorpedagogico.presentation.util.structure.navigation.NavData
+import com.tem.plate.util.structure.navigation.NavData
 
 class FruitNavData : NavData {
     override fun createIntent(context: Context): Intent {

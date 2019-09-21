@@ -1,7 +1,7 @@
 package com.tem.plate.util.structure.dependecyinjector
 
 import com.tem.data.api.ApiClient
-import com.tem.domain.resources.StringsProvider
+import com.tem.domain.util.StringsProvider
 import com.tem.plate.util.ErrorHandler
 import com.tem.plate.util.resources.AndroidStringProvider
 import com.tem.plate.util.resources.SchedulerProvider
@@ -15,6 +15,6 @@ val applicationModule = module {
     factory { SchedulerProvider() }
     //single(named(NAME_HERE)) {MyObject()}
     factory { AndroidLogger(get()) } bind Logger::class
-    factory { ErrorHandler(get()) }
+    factory { ErrorHandler() }
     factory { ApiClient }
 }

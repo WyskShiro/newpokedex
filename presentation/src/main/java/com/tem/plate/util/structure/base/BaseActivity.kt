@@ -5,13 +5,13 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.tem.plate.util.extensions.observeEvent
+import com.tem.plate.util.extensions.shortToast
+import com.tem.plate.util.structure.navigation.NavData
 import com.tem.plate.util.structure.navigation.Navigator
 
 abstract class BaseActivity : AppCompatActivity() {
 
     abstract val baseViewModel: BaseViewModel
-
-    private var dialog: Dialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,9 +19,10 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     open fun subscribeUi() {
-        baseViewModel.dialog.observeEvent(this, ::onNextDialog)
-        baseViewModel.goTo.observeEvent(this, ::onNextNavigation)
-        baseViewModel.toast.observeEvent(this, ::onNextToast)
+        with(baseViewModel) {
+            goTo.observeEvent(this@BaseActivity, ::onNextNavigation)
+            toast.observeEvent(this@BaseActivity, ::onNextToast)
+        }
     }
 
     private fun onNextToast(text: String?) {
@@ -38,11 +39,6 @@ abstract class BaseActivity : AppCompatActivity() {
             }
             else -> super.onOptionsItemSelected(item)
         }
-    }
-
-    private fun onNextDialog(dialogData: DialogData?) {
-        dialog?.dismiss()
-        dialog = dialogData?.let { showDialog(it) }
     }
 
     private fun onNextNavigation(navData: NavData?) {

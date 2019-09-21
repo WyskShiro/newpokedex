@@ -35,17 +35,17 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "API_ENDPOINT", "\"$rootProject.ext.apiURL\""
+            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         }
 
         staging {
             applicationIdSuffix ".staging"
-            buildConfigField "String", "API_ENDPOINT", "\"$rootProject.ext.apiURL\""
+            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         }
 
         debug {
             applicationIdSuffix ".debug"
-            buildConfigField "String", "API_ENDPOINT", "\"$rootProject.ext.apiURL\""
+            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         }
     }
 }

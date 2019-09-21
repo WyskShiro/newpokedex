@@ -3,8 +3,8 @@ package com.tem.plate.util.extensions
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.ufms.mediadorpedagogico.presentation.util.structure.arch.Event
-import com.ufms.mediadorpedagogico.presentation.util.structure.arch.EventObserver
+import com.tem.plate.util.structure.arch.Event
+import com.tem.plate.util.structure.arch.EventObserver
 
 fun <T> defaultMutableLiveData(t: T?): MutableLiveData<T> {
     val liveData = MutableLiveData<T>()

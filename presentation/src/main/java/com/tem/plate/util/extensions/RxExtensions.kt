@@ -1,7 +1,7 @@
-package com.ufms.mediadorpedagogico.domain.extensions
+package com.tem.plate.util.extensions
 
-import com.ufms.mediadorpedagogico.presentation.util.resources.SchedulerProvider
-import com.ufms.mediadorpedagogico.presentation.util.viewmodels.Placeholder
+import com.tem.plate.util.resources.SchedulerProvider
+import com.tem.plate.util.viewmodels.Placeholder
 import io.reactivex.Completable
 import io.reactivex.Observable
 import io.reactivex.Single

@@ -4,6 +4,7 @@ import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import com.tem.data.BuildConfig
 import com.tem.data.entity.ApiFruit
+import com.tem.data.util.request.RequestException
 import io.reactivex.Completable
 import io.reactivex.Single
 import io.reactivex.SingleTransformer
@@ -11,6 +12,9 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/**
+ * The bridge between ApiService and DefaultRepositories
+ * */
 object ApiClient {
 
     private const val apiURL = BuildConfig.API_URL
@@ -18,6 +22,10 @@ object ApiClient {
     private var apiServiceSingleton: ApiService? = null
 
     private val apiServices: ApiService get() = apiServiceSingleton ?: buildApiServices()
+
+    /**
+     * Fruits
+     * */
 
     fun getFruit(): Single<ApiFruit> {
         return makeRequest(apiServices.getFruit())
@@ -29,7 +37,7 @@ object ApiClient {
 
     /**
      *
-     * - ApiService, Retrofit, AuthInterceptor builders
+     * - ApiService, Retrofit,
      * - Response and Request Handler Methods
      *
      **/
@@ -57,7 +65,7 @@ object ApiClient {
         return SingleTransformer { upstream ->
             upstream.doOnSuccess { response ->
                 if (!response.isSuccessful) {
-                    throw RequestException.httpError(response.code(), response.errorBody())
+                    throw Throwable("Something went wrong while getting the response")
                 }
             }
         }
@@ -66,10 +74,7 @@ object ApiClient {
     private fun <T> verifyRequestException(): SingleTransformer<Response<T>, Response<T>> {
         return SingleTransformer { upstream ->
             upstream.onErrorResumeNext { t ->
-                when (t) {
-                    is RequestException -> Single.error(t)
-                    is SocketTimeoutException -> Single.error(RequestException.timeoutError(t))
-                    is IOException -> Single.error(RequestException.networkError(t))
+                when {
                     else -> Single.error(RequestException.unexpectedError(t))
                 }
             }
