@@ -2,8 +2,8 @@
     <!--
         GLOBAL
     -->
-    <string name="app_name">Template</string>
-    <string name="fruit_title">The marvelous fruits template</string>
+    <string name="app_name">Pokedex V2</string>
+    <string name="fruit_title">Pokemon</string>
 
     <!--
         DIALOG

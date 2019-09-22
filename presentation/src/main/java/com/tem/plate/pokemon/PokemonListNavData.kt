@@ -1,11 +1,11 @@
-package com.tem.plate.fruit
+package com.tem.plate.pokemon
 
 import android.content.Context
 import android.content.Intent
 import com.tem.plate.util.structure.navigation.NavData
 
-class FruitNavData : NavData {
+class PokemonListNavData : NavData {
     override fun createIntent(context: Context): Intent {
-        return FruitActivity.createIntent(context)
+        return PokemonListActivity.createIntent(context)
     }
 }

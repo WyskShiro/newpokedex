@@ -1,4 +1,4 @@
-package com.tem.plate.util.structure.dependecyinjector
+package com.tem.plate.util.dependecyinjector
 
 import com.tem.data.api.ApiClient
 import com.tem.domain.util.StringsProvider

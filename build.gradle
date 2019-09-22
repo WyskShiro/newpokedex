@@ -28,7 +28,6 @@ buildscript {
         multidexVersion = '1.0.3'
         rxAndroidVersion = '2.1.0'
         rxKotlinVersion = '2.1.0'
-        rxPermissionVersion = '0.10.2'
         rxJava2AdapterVersion = '1.0.0'
         rxBindingVersion = '3.0.0'
         retrofitVersion = '2.4.0'

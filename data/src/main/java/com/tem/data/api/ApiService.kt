@@ -17,7 +17,7 @@ interface ApiService {
 
     @GET("pokemon")
     fun getPokemonList(
-        @Query("limit") limit: Int?,
-        @Query("offset") offset: Int?
+        @Query("offset") offset: Int?,
+        @Query("limit") limit: Int?
     ): Single<Response<ApiResult>>
 }
