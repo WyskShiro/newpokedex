@@ -3,7 +3,7 @@
         GLOBAL
     -->
     <string name="app_name">Pokedex V2</string>
-    <string name="fruit_title">Pokemon</string>
+    <string name="pokemon_title">Pokemon</string>
 
     <!--
         DIALOG

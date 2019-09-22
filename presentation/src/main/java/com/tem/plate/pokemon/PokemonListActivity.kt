@@ -9,6 +9,7 @@ import com.tem.domain.entity.Pokemon
 import com.tem.plate.R
 import com.tem.plate.databinding.ActivityPokemonBinding
 import com.tem.plate.util.extensions.observe
+import com.tem.plate.util.extensions.setupToolbar
 import com.tem.plate.util.structure.base.BaseActivity
 import com.tem.plate.util.structure.base.BaseViewModel
 import org.koin.android.ext.android.inject
@@ -23,6 +24,7 @@ class PokemonListActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_pokemon)
+        setupToolbar(binding.toolbar, false)
         setupUi()
         setupRecyclerAdapter()
         setupRecycler()

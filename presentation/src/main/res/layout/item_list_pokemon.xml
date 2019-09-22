@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/small"
-        android:background="@drawable/card_view"
+        android:background="@drawable/gradient_red_blue_borders"
         android:minHeight="@dimen/huge"
         android:orientation="vertical"
         android:padding="@dimen/normal">
@@ -18,6 +18,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLength="54"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:letterSpacing="0.2"
+            android:fontFamily="@font/pokemon_solid"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Bulbassaur"/>

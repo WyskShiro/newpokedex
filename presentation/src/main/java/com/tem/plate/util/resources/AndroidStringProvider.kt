@@ -9,7 +9,7 @@ import com.tem.plate.R
 class AndroidStringProvider(context: Context) : StringsProvider {
     private val context = context.applicationContext
 
-    override val fruitTitle: String get() = res(R.string.fruit_title)
+    override val pokemonTitle: String get() = res(R.string.pokemon_title)
 
     private fun res(@StringRes stringId: Int) = context.getString(stringId)
 }
