@@ -32,6 +32,7 @@ class PokemonListActivity : BaseActivity() {
     override fun subscribeUi() {
         super.subscribeUi()
         viewModel.pokemonList.observe(this, ::updatePokemonList)
+        viewModel.pokemonDetails.observe(this, ::showFragmentPokemonDetails)
     }
 
     private fun setupUi() {
@@ -53,6 +54,16 @@ class PokemonListActivity : BaseActivity() {
 
     private fun updatePokemonList(pokemons: List<Pokemon>?) {
         pokemons?.run(pokemonListAdapter::insertPokemons)
+    }
+
+    private fun showFragmentPokemonDetails(pokemon: Pokemon?) {
+        val bundle = Bundle()
+
+        with(PokemonDetailsBottomSheetDialog) {
+            bundle.putSerializable(POKEMON_BUNDLE_KEY, pokemon)
+            getInstance(bundle)
+                .show(supportFragmentManager, TAG)
+        }
     }
 
     companion object {
