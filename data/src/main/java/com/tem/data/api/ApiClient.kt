@@ -3,8 +3,10 @@ package com.tem.data.api
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import com.tem.data.BuildConfig
+import com.tem.data.entity.ApiPokemon
 import com.tem.data.entity.ApiResult
 import com.tem.data.util.request.RequestException
+import com.tem.domain.entity.Pokemon
 import io.reactivex.Completable
 import io.reactivex.Single
 import io.reactivex.SingleTransformer
@@ -31,6 +33,9 @@ object ApiClient {
         return makeRequest(apiServices.getPokemonList(offset, limit))
     }
 
+    fun getPokemonDetails(id: Int?): Single<ApiPokemon> {
+        return makeRequest(apiServices.getPokemonDetails(id))
+    }
 
     /**
      *

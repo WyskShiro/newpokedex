@@ -11,4 +11,8 @@ class GetPokemon constructor(
     fun list(offset: Int? = 0, limit: Int? = 20): Single<List<Pokemon>> {
         return repository.getPokemonList(offset, limit)
     }
+
+    fun details(id: Int): Single<Pokemon> {
+        return repository.getPokemonDetails(id)
+    }
 }

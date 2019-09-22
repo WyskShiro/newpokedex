@@ -7,4 +7,6 @@ data class Pokemon(
     var name: String? = null,
     var url: String? = null,
     var types: List<PokemonType>? = null
-) : Serializable
+) : Serializable {
+
+}

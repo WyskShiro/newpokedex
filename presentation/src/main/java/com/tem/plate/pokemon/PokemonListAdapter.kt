@@ -4,12 +4,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tem.domain.entity.Pokemon
 
-class PokemonListAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+class PokemonListAdapter(
+    val onClickCallback: (Pokemon) -> Unit
+): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     private var pokemons: MutableList<Pokemon> = mutableListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return PokemonViewHolder.inflate(parent)
+        return PokemonViewHolder.inflate(parent, onClickCallback)
     }
 
     override fun getItemCount() = pokemons.size

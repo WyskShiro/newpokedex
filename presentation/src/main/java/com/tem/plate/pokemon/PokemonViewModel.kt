@@ -1,5 +1,6 @@
 package com.tem.plate.pokemon
 
+import android.util.Log
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -17,23 +18,39 @@ class PokemonViewModel(
 ) : BaseViewModel() {
 
     val pokemonList: LiveData<List<Pokemon>> get() = _pokemonList
+    val pokemonDetails: LiveData<Pokemon> get() = _pokemonDetails
 
     private val _pokemonList: MutableLiveData<List<Pokemon>> = MutableLiveData()
+    private val _pokemonDetails: MutableLiveData<Pokemon> = MutableLiveData()
+
+    fun onRecyclerItemClicked(pokemon: Pokemon) {
+        pokemon.id?.let {
+            getPokemon
+                .details(it)
+                .defaultSched(schedulerProvider)
+                .subscribeBy(::onError, ::onGetDetailsSuccess)
+                .let(disposables::add)
+        }
+    }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     private fun onCreate() {
         getPokemon
             .list()
             .defaultSched(schedulerProvider)
-            .subscribeBy(::onError, ::onSuccess)
+            .subscribeBy(::onError, ::onGetListSuccess)
             .let(disposables::add)
     }
 
-    private fun onError(throwable: Throwable) {
-
+    private fun onGetListSuccess(pokemons: List<Pokemon>) {
+        _pokemonList.value = pokemons
     }
 
-    private fun onSuccess(pokemons: List<Pokemon>) {
-        _pokemonList.value = pokemons
+    private fun onGetDetailsSuccess(pokemon: Pokemon) {
+        _pokemonDetails.value = pokemon
+    }
+
+    private fun onError(throwable: Throwable) {
+        Log.d("ERROR", throwable.message)
     }
 }

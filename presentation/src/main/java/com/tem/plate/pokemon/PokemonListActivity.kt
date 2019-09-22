@@ -19,11 +19,12 @@ class PokemonListActivity : BaseActivity() {
 
     private lateinit var binding: ActivityPokemonBinding
     private val viewModel: PokemonViewModel by inject()
-    private val pokemonListAdapter = PokemonListAdapter()
+    private lateinit var pokemonListAdapter: PokemonListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_pokemon)
         setupUi()
+        setupRecyclerAdapter()
         setupRecycler()
         super.onCreate(savedInstanceState)
     }
@@ -35,6 +36,10 @@ class PokemonListActivity : BaseActivity() {
 
     private fun setupUi() {
         // Set clicklisteners and textListeners
+    }
+
+    private fun setupRecyclerAdapter() {
+        pokemonListAdapter = PokemonListAdapter(viewModel::onRecyclerItemClicked)
     }
 
     private fun setupRecycler() {

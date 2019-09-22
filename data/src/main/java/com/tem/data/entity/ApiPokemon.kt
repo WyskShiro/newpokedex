@@ -18,12 +18,24 @@ data class ApiPokemon(
     @SerializedName("types") val types: List<ApiPokemonSlotType>
 ) : Serializable {
 
+    private fun getPokemonId(): Int? {
+        return try {
+            url?.replace(URL_PREFIX, "")?.replace("/", "")?.toInt()
+        } catch (e: NumberFormatException) {
+            null
+        }
+    }
+
     object ApiPokemonToPokemonMapper : Mapper<ApiPokemon, Pokemon>() {
         override fun transform(t: ApiPokemon) = Pokemon(
-            id = t.id,
+            id = t.getPokemonId(),
             name = t.name,
             url = t.url,
             types = ApiPokemonSlotType.ApiPokemonSlotTypeToPokemonType.transform(t.types)
         )
+    }
+
+    companion object {
+        private const val URL_PREFIX = "https://pokeapi.co/api/v2/pokemon/"
     }
 }
