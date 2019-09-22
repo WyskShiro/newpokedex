@@ -14,14 +14,16 @@ import java.io.Serializable
 data class ApiPokemon(
     @SerializedName("id") val id: Int?,
     @SerializedName("name") val name: String?,
-    @SerializedName("url") val url: String?
+    @SerializedName("url") val url: String?,
+    @SerializedName("types") val types: List<ApiPokemonSlotType>
 ) : Serializable {
 
     object ApiPokemonToPokemonMapper : Mapper<ApiPokemon, Pokemon>() {
         override fun transform(t: ApiPokemon) = Pokemon(
             id = t.id,
             name = t.name,
-            url = t.url
+            url = t.url,
+            types = ApiPokemonSlotType.ApiPokemonSlotTypeToPokemonType.transform(t.types)
         )
     }
 }
