@@ -14,4 +14,9 @@
     <dimen name="huge">56dp</dimen>
     <dimen name="xhuge">64dp</dimen>
     <dimen name="xxhuge">72dp</dimen>
+
+    <!--
+        Special sizes - for special heights and widths
+    -->
+    <dimen name="pokemon_detail_size">88dp</dimen>
 </resources>

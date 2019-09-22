@@ -6,8 +6,8 @@ import com.tem.domain.entity.PokemonType
 import java.io.Serializable
 
 data class ApiPokemonSlotType(
-    @SerializedName("slot") val slot: Int? = null,
-    @SerializedName("type") val type: ApiPokemonType? = null
+    @SerializedName("slot") val slot: Int?,
+    @SerializedName("type") val type: ApiPokemonType?
 ) : Serializable {
 
     object ApiPokemonSlotTypeToPokemonType: Mapper<ApiPokemonSlotType, PokemonType>() {

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.tem.domain.entity.Pokemon
 import com.tem.plate.databinding.FragmentPokemonDetailsBinding
@@ -27,6 +28,7 @@ class PokemonDetailsBottomSheetDialog : BottomSheetDialogFragment() {
         with(binding) {
             pokemon?.run {
                 textViewName.text = name
+                Glide.with(context).load(sprites?.frontUrl).into(imageViewPokemonPhoto)
                 textViewTypeOne.text = types?.getOrNull(0)?.name
                 textViewTypeTwo.text = types?.getOrNull(1)?.name
             }

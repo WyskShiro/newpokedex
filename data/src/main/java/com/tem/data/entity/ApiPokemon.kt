@@ -3,6 +3,7 @@ package com.tem.data.entity
 import com.google.gson.annotations.SerializedName
 import com.tem.data.mapper.Mapper
 import com.tem.domain.entity.Pokemon
+import com.tem.domain.entity.Sprites
 import java.io.Serializable
 
 /**
@@ -15,6 +16,7 @@ data class ApiPokemon(
     @SerializedName("id") val id: Int?,
     @SerializedName("name") val name: String?,
     @SerializedName("url") val url: String?,
+    @SerializedName("sprites") val sprites: ApiSprites?,
     @SerializedName("types") val types: List<ApiPokemonSlotType>
 ) : Serializable {
 
@@ -31,6 +33,7 @@ data class ApiPokemon(
             id = t.getPokemonId(),
             name = t.name,
             url = t.url,
+            sprites = t.sprites?.run(ApiSprites.ApiSpriteToSprite::transform),
             types = ApiPokemonSlotType.ApiPokemonSlotTypeToPokemonType.transform(t.types)
         )
     }

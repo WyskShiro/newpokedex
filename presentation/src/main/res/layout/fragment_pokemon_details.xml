@@ -11,10 +11,11 @@
 
         <ImageView
             android:id="@+id/image_view_pokemon_photo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/pokemon_detail_size"
+            android:layout_height="@dimen/pokemon_detail_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             tools:src="@mipmap/nidoking_image_example" />
 
         <TextView
