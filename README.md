@@ -6,9 +6,9 @@ The V2 uses more useful features and it's more organized (Clean Architecture, MV
 Some images:
 <div style="display: flex;">
   <div style="flex: 33.33%;">
-    <img  src="https://i.imgur.com/zcnISCc.png" height="576" width="346" />
+    <img src="https://i.imgur.com/zcnISCc.png" height="576" width="346" />
   </div>
   <div style="flex: 33.33%;">
-    <img  src="https://i.imgur.com/VOZkm2L.png" height="576" width="346" display/>
+    <img src="https://i.imgur.com/VOZkm2L.png" height="576" width="346" />
   </div>
 </div>
