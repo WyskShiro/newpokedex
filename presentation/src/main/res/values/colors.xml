@@ -2,9 +2,27 @@
 <resources>
     <!-- colors -->
 
-    <!-- alpha values: http://stackoverflow.com/questions/15852122/hex-transparency-in-colors -->
+    <!-- pokemon types -->
     <color name="blue_ice">#BB81DEF1</color>
     <color name="green_grass">#BB67BC48</color>
+    <color name="green_bug">#BBA6B933</color>
+    <color name="brown_dark">#BB45332A</color>
+    <color name="purple_dragon">#BB7058D4</color>
+    <color name="yellow_eletric">#BBF9B732</color>
+    <color name="pink_fairy">#BBEEBED9</color>
+    <color name="brown_fighting">#7B3423</color>
+    <color name="red_fire">#BBCD1F0A</color>
+    <color name="blue_flying">#BB879BE3</color>
+    <color name="purple_ghost">#BB424185</color>
+    <color name="yellow_ground">#BBC9B45B</color>
+    <color name="gray_normal">#BBABA694</color>
+    <color name="purple_poison">#BB864484</color>
+    <color name="pink_psychic">#BBEC477D</color>
+    <color name="brown_rock">#BBA08240</color>
+    <color name="gray_steel">#BB8E8D9B</color>
+    <color name="blue_water">#BB2488D3</color>
+
+
     <color name="strong_red">#DA3B3C</color>
 
 
