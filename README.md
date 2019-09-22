@@ -5,4 +5,4 @@ The V2 uses more useful features and it's more organized (Clean Architecture, MV
 
 Some images:
 
-![Listing pokemons](https://i.imgur.com/zcnISCc.png)
+<img src="https://i.imgur.com/zcnISCc.png" height="576" width="346" />
