@@ -5,17 +5,12 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-
-    // rx
-    compile "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
-
-    // kotlin
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.ext.kotlinVersion"
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.ext.kotlinVersion"
+    api "org.koin:koin-core:$koinVersion"
+    api "org.koin:koin-android-viewmodel:$koinVersion"
     implementation "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
-
-    implementation "org.koin:koin-core:$koinVersion"
-    implementation "org.koin:koin-android-viewmodel:$koinVersion"
 }
 
 compileKotlin {

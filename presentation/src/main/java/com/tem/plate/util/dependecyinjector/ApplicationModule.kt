@@ -13,8 +13,7 @@ import java.util.logging.Logger
 val applicationModule = module {
     factory<StringsProvider> { AndroidStringProvider(get()) }
     factory { SchedulerProvider() }
-    //single(named(NAME_HERE)) {MyObject()}
     factory { AndroidLogger(get()) } bind Logger::class
     factory { ErrorHandler() }
-    factory { ApiClient }
+    factory { ApiClient(get()) }
 }

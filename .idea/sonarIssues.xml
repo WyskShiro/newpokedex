@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/diet/DietAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/diet/DietMealViewHolder.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/diet/addfood/AddFoodAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/diet/addfood/AddFoodBottomSheetDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/diet/addfood/AddFoodFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/diet/addfood/AddFoodViewHolder.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/diet/addfood/AddFoodViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/util/base/BaseBottomSheetDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/res/layout/fragment_add_food.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/res/layout/fragment_select_meal.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/res/layout/item_list_meal.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/res/values/dimens.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/dieta-e-treino-android/presentation/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/novo/dieta-e-treino-android/domain/src/main/java/br/com/dietaetreino/domain/entity/Diary.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/novo/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/DashboardActivityModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/novo/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/diet/DietFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/novo/dieta-e-treino-android/presentation/src/main/java/br/com/dietaetreino/presentation/view/dashboard/diet/DietFragmentModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/data/src/main/java/will/shiro/data/api/ApiService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/AppBeerBirl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/beer/BeerActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/beer/BeerDelegate.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/beer/BeerViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/ErrorHandler.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/extensions/ActivityExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/extensions/ContextExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/extensions/LiveDataExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/extensions/PlaceholderExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/extensions/RxExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/extensions/ViewExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/resources/AndroidStringProvider.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/resources/SchedulerProvider.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/resources/TextWatcher.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/structure/arch/Event.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/structure/arch/EventObserver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/structure/base/BaseActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/structure/base/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/structure/dependecyinjector/ApplicationModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/structure/dependecyinjector/InteractorModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/structure/dependecyinjector/RepositoryModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/structure/dependecyinjector/ViewModelModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/viewmodels/DialogData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/java/will/shiro/presentation/util/viewmodels/Placeholder.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/res/drawable/gradient_beer_borders.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/res/drawable/gradient_red_blue.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/res/layout/activity_beer.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/res/layout/included_toolbar.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/res/layout/item_list_beer.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/res/values/dimens.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../BeerBirl/presentation/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/tem/data/api/ApiClient.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/tem/data/api/ApiService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/tem/data/repository/DefaultPokemonRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/domain/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/com/tem/domain/boundary/PokemonRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/com/tem/domain/interactor/pokemon/GetPokemon.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/AppTemplateMini.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/PokedexApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonListActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/dependecyinjector/ApplicationModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/dependecyinjector/RequestModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/structure/base/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/res/layout/item_list_pokemon.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

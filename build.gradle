@@ -17,22 +17,26 @@ buildscript {
         targetSdkVersion = 28
 
         // App dependencies
+        archLifecycleVersion = '1.1.1'
+        appCompatVersion = '1.1.0'
+        constraintLayoutVersion = '1.1.3'
         daggerVersion = '2.20'
         glideVersion = '4.4.0'
         gradleVersion = '3.5.0'
         kotlinVersion = '1.3.41'
+        lifecycleExtensionsVersion = '2.1.0'
+        materialVersion = '1.0.0'
+        multidexVersion = '1.0.3'
         supportVersion = '28.0.0'
         sthetoVersion = '1.5.0'
+        retroFitRxJavaAdapterVersion = '1.0.0'
+        retrofitVersion = '2.4.0'
         roomVersion = '1.1.1'
         rxJavaVersion = '2.2.2'
-        multidexVersion = '1.0.3'
-        rxAndroidVersion = '2.1.0'
+        rxAndroidVersion = '2.1.1'
         rxKotlinVersion = '2.1.0'
         rxJava2AdapterVersion = '1.0.0'
         rxBindingVersion = '3.0.0'
-        retrofitVersion = '2.4.0'
-        retroFitRxJavaAdapterVersion = '1.0.0'
-        archLifecycleVersion = '1.1.1'
         koinVersion = '2.0.1'
     }
 

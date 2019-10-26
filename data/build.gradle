@@ -42,18 +42,10 @@ android {
 dependencies {
     implementation project(':domain')
 
-    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    api "com.squareup.retrofit2:retrofit:$retrofitVersion"
     api "com.squareup.retrofit2:converter-gson:$retrofitVersion"
-    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$retroFitRxJavaAdapterVersion"
-
-    // rx android
+    api "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$retroFitRxJavaAdapterVersion"
+    api "androidx.appcompat:appcompat:$appCompatVersion"
     api "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
-
-    // room
-    kapt 'androidx.room:room-compiler:2.0.0'
-    api 'androidx.room:room-runtime:2.0.0'
-    implementation 'androidx.room:room-rxjava2:2.0.0'
-
-    implementation 'androidx.appcompat:appcompat:1.0.2'
 }
 
