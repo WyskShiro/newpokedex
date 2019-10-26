@@ -83,6 +83,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/main/java/com/ufms/mediadorpedagogico/data/storage/PreferencesCache.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Desktop/novo/dieta-e-treino-android/domain/src/main/java/br/com/dietaetreino/domain/entity/Diary.kt">
           <value>
             <set />
@@ -343,6 +348,31 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/androidTest/java/com/tem/plate/ExampleInstrumentedTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/androidTest/java/com/tem/plate/GetAboutTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/androidTest/java/com/tem/plate/GetPokemonTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/androidTest/java/com/tem/plate/MocksEntities.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/androidTest/java/com/tem/plate/MocksRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/AppTemplateMini.kt">
           <value>
             <set />
@@ -404,6 +434,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/res/layout/item_list_pokemon.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/test/java/com/tem/plate/GetPokemonTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/test/java/com/tem/plate/TestAnnotations.kt">
           <value>
             <set />
           </value>

@@ -63,4 +63,11 @@ dependencies {
     kapt "com.github.bumptech.glide:compiler:$glideVersion"
 
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+    testImplementation 'androidx.test:core:1.2.0'
+
+    testImplementation 'org.mockito:mockito-core:2.7.22'
+    testImplementation 'org.assertj:assertj-core:3.12.2'
 }
