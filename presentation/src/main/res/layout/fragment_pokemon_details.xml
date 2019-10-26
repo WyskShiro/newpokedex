@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="pokemon"
+            type="com.tem.domain.entity.Pokemon" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_fragment"
         android:layout_width="match_parent"
@@ -13,9 +20,10 @@
             android:id="@+id/image_view_pokemon_photo"
             android:layout_width="@dimen/pokemon_detail_size"
             android:layout_height="@dimen/pokemon_detail_size"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:loadBordered="@{pokemon.sprites.frontUrl}"
             tools:src="@mipmap/nidoking_image_example" />
 
         <TextView
@@ -23,6 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/normal"
+            android:text="@{pokemon.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/image_view_pokemon_photo"
             app:layout_constraintTop_toTopOf="parent"
@@ -33,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/normal"
+            android:text="@{pokemon.getSafeType(0)}"
             app:layout_constraintStart_toEndOf="@id/image_view_pokemon_photo"
             app:layout_constraintTop_toBottomOf="@id/text_view_name"
             tools:text="Poison" />
@@ -42,6 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/normal"
+            android:text="@{pokemon.getSafeType(1)}"
             app:layout_constraintStart_toEndOf="@id/text_view_type_one"
             app:layout_constraintTop_toBottomOf="@id/text_view_name"
             tools:text="Ground" />

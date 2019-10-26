@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="pokemon"
+            type="com.tem.domain.entity.Pokemon" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout_item"
         android:layout_width="match_parent"
@@ -24,6 +30,7 @@
             android:fontFamily="@font/pokemon_solid"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:text="@{pokemon.name}"
             tools:text="Bulbassaur"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

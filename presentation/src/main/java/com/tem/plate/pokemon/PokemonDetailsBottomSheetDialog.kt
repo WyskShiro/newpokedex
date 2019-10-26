@@ -25,14 +25,7 @@ class PokemonDetailsBottomSheetDialog : BottomSheetDialogFragment() {
     }
 
     private fun setupUi(pokemon: Pokemon?) {
-        with(binding) {
-            pokemon?.run {
-                textViewName.text = name
-                Glide.with(context).load(sprites?.frontUrl).into(imageViewPokemonPhoto)
-                textViewTypeOne.text = types?.getOrNull(0)?.name
-                textViewTypeTwo.text = types?.getOrNull(1)?.name
-            }
-        }
+        pokemon?.let { binding.pokemon = it }
     }
 
     companion object {

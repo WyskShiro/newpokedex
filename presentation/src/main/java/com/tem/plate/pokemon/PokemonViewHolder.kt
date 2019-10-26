@@ -14,7 +14,7 @@ class PokemonViewHolder(
 ): RecyclerView.ViewHolder(binding.root) {
 
     fun setupBinding(pokemon: Pokemon) {
-        binding.textViewName.text = pokemon.name
+        binding.pokemon = pokemon
         binding.constraintLayoutItem.setOnClickListener{
             onClickCallback.invoke(pokemon)
         }

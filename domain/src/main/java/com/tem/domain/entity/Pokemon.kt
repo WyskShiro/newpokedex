@@ -8,4 +8,7 @@ data class Pokemon(
     var url: String? = null,
     var sprites: Sprites? = null,
     var types: List<PokemonType>? = null
-) : Serializable
+) : Serializable {
+
+    fun getSafeType(position: Int) = types?.getOrNull(position)?.name ?: ""
+}

@@ -313,7 +313,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/com/tem/domain/entity/Pokemon.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/com/tem/domain/entity/PokemonType.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/domain/src/main/java/com/tem/domain/interactor/pokemon/GetPokemon.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/com/tem/domain/util/Extensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/com/tem/domain/util/KotlinExtensions.kt">
           <value>
             <set />
           </value>
@@ -333,12 +353,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonDetailsBottomSheetDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonListActivity.kt">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonViewHolder.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/bindingadapter/ImageViewBA.kt">
           <value>
             <set />
           </value>
@@ -353,7 +388,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/extensions/Extensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/structure/base/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_pokemon_details.xml">
           <value>
             <set />
           </value>
