@@ -1,8 +1,14 @@
-# "Small" Template for simple applications
-Template using Data, Domain and Presentation
+# Pokedex V2
+Where is the V1 ? Hidden because it's ugly.
 
-Uses RxJava for asynchronous calls with Retrofit
+The V2 uses more useful features and it's more organized (Clean Architecture, MVVM, Livedata, RxJava)
 
-Livedata for updating Activities and Fragments
-
-Koin for dependency injection
+Some images:
+<div style="display: flex;">
+  <div style="flex: 33.33%;">
+    <img src="https://i.imgur.com/zcnISCc.png" height="576" width="346" />
+  </div>
+  <div style="flex: 33.33%;">
+    <img src="https://i.imgur.com/VOZkm2L.png" height="576" width="346" />
+  </div>
+</div>
