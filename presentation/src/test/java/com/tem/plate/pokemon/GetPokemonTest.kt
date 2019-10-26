@@ -1,12 +1,37 @@
-package com.tem.plate
+package com.tem.plate.pokemon
 
+import com.tem.domain.boundary.PokemonRepository
 import com.tem.domain.entity.Pokemon
 import com.tem.domain.entity.PokemonType
 import com.tem.domain.entity.Sprites
+import com.tem.domain.interactor.pokemon.GetPokemon
+import io.reactivex.Single
+import org.junit.jupiter.api.*
+import org.mockito.Mockito.`when`
+import org.mockito.Mockito.mock
 
-object MocksEntities {
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+class GetPokemonTest {
 
-    val mockedFirst5Pokemons = listOf(
+    private lateinit var mockedRepository: PokemonRepository
+
+    @BeforeAll
+    fun init() {
+        mockedRepository = mock(PokemonRepository::class.java)
+    }
+
+    @Test
+    fun executeSuccess() {
+        val _OFFSET = 0
+        val _LIMIT = 10
+
+        `when`(mockedRepository.getPokemonList(_OFFSET, _LIMIT)).thenReturn(Single.just(mockedFirst5Pokemons))
+
+        val pokemon = GetPokemon(mockedRepository).list(_OFFSET, _LIMIT).blockingGet()
+        assert(pokemon == mockedFirst5Pokemons)
+    }
+
+    private val mockedFirst5Pokemons = listOf(
         Pokemon(
             id = 1,
             name = "Bulbassaur",

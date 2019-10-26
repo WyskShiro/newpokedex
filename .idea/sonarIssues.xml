@@ -443,7 +443,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/test/java/com/tem/plate/MocksEntities.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/presentation/src/test/java/com/tem/plate/TestAnnotations.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/test/java/com/tem/plate/pokemon/GetPokemonTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/test/java/com/tem/plate/pokemon/PokemonTest.kt">
           <value>
             <set />
           </value>
