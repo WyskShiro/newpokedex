@@ -37,6 +37,7 @@ buildscript {
         rxJavaVersion = '2.2.2'
         rxAndroidVersion = '2.1.1'
         rxKotlinVersion = '2.1.0'
+        navigationVersion = '2.1.0'
         rxJava2AdapterVersion = '1.0.0'
         rxBindingVersion = '3.0.0'
     }
@@ -50,6 +51,7 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$gradleVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0'
 
     }
 }

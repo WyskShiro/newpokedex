@@ -6,6 +6,6 @@ import com.tem.plate.util.structure.navigation.NavData
 
 class PokemonListNavData : NavData {
     override fun createIntent(context: Context): Intent {
-        return PokemonListActivity.createIntent(context)
+        return PokemonListFragment.createIntent(context)
     }
 }

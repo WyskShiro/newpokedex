@@ -373,6 +373,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/AppTemplateMini.kt">
           <value>
             <set />
@@ -383,12 +388,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonDetailsBottomSheetDialog.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonListActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/pokemon/PokemonListFragment.kt">
           <value>
             <set />
           </value>
@@ -423,7 +438,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/extensions/LiveDataExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/structure/base/BaseActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/structure/base/BaseFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/java/com/tem/plate/util/structure/base/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/res/layout/activity_pokemon.xml">
           <value>
             <set />
           </value>
@@ -433,7 +468,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_pokemon_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/presentation/src/main/res/layout/item_list_pokemon.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/presentation/src/main/res/navigation/navigation.xml">
           <value>
             <set />
           </value>

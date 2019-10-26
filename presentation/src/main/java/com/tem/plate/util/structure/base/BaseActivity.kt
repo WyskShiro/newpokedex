@@ -2,6 +2,7 @@ package com.tem.plate.util.structure.base
 
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.annotation.CallSuper
 import androidx.appcompat.app.AppCompatActivity
 import com.tem.plate.util.extensions.observeEvent
 import com.tem.plate.util.extensions.shortToast
@@ -12,6 +13,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
     abstract val baseViewModel: BaseViewModel
 
+    @CallSuper
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         lifecycle.addObserver(baseViewModel)
