@@ -1,4 +1,5 @@
 package com.tem.plate
+
 import android.app.Application
 import com.tem.plate.util.dependecyinjector.*
 import org.koin.android.ext.koin.androidContext
@@ -12,7 +13,15 @@ class PokedexApplication : Application() {
         startKoin {
             androidLogger()
             androidContext(applicationContext)
-            modules(listOf(interactorModule, repositoryModule, applicationModule, viewModelModule, requestModule))
+            modules(
+                listOf(
+                    interactorModule,
+                    repositoryModule,
+                    applicationModule,
+                    viewModelModule,
+                    requestModule
+                )
+            )
         }
     }
 }

@@ -2,7 +2,6 @@ package com.tem.data.api
 
 import com.tem.data.entity.ApiPokemon
 import com.tem.data.entity.ApiResult
-import com.tem.domain.entity.Pokemon
 import io.reactivex.Single
 import retrofit2.Response
 import retrofit2.http.GET

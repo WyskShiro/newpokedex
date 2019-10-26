@@ -1,10 +1,8 @@
 package com.tem.plate.util.extensions
 
-import android.graphics.drawable.Drawable
 import android.text.Editable
 import android.view.View
 import android.widget.TextView
-import com.bumptech.glide.request.RequestOptions
 import com.google.android.material.textfield.TextInputLayout
 import com.tem.plate.util.resources.SimpleTextWatcher
 import io.reactivex.disposables.Disposable

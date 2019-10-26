@@ -6,7 +6,7 @@ import com.tem.domain.entity.Pokemon
 
 class PokemonListAdapter(
     val onClickCallback: (Pokemon) -> Unit
-): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private var pokemons: MutableList<Pokemon> = mutableListOf()
 

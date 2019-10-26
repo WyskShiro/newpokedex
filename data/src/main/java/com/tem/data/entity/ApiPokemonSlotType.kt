@@ -10,7 +10,7 @@ data class ApiPokemonSlotType(
     @SerializedName("type") val type: ApiPokemonType?
 ) : Serializable {
 
-    object ApiPokemonSlotTypeToPokemonType: Mapper<ApiPokemonSlotType, PokemonType>() {
+    object ApiPokemonSlotTypeToPokemonType : Mapper<ApiPokemonSlotType, PokemonType>() {
         override fun transform(t: ApiPokemonSlotType): PokemonType {
             return PokemonType(
                 slot = t.slot,

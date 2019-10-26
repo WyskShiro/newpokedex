@@ -11,11 +11,11 @@ import com.tem.plate.databinding.ItemListPokemonBinding
 class PokemonViewHolder(
     private val binding: ItemListPokemonBinding,
     private val onClickCallback: (Pokemon) -> Unit
-): RecyclerView.ViewHolder(binding.root) {
+) : RecyclerView.ViewHolder(binding.root) {
 
     fun setupBinding(pokemon: Pokemon) {
         binding.pokemon = pokemon
-        binding.constraintLayoutItem.setOnClickListener{
+        binding.constraintLayoutItem.setOnClickListener {
             onClickCallback.invoke(pokemon)
         }
     }

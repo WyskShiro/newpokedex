@@ -8,9 +8,9 @@ import java.io.Serializable
 data class ApiResult(
     @SerializedName("count") val count: Int?,
     @SerializedName("results") val results: List<ApiPokemon>?
-): Serializable {
+) : Serializable {
 
-    object ApiResultToPokemonListMapper: Mapper<ApiResult, List<Pokemon>>() {
+    object ApiResultToPokemonListMapper : Mapper<ApiResult, List<Pokemon>>() {
         override fun transform(t: ApiResult): List<Pokemon> {
             return ApiPokemon.ApiPokemonToPokemonMapper.transform(t.results) ?: emptyList()
         }

@@ -3,7 +3,6 @@ package com.tem.data.entity
 import com.google.gson.annotations.SerializedName
 import com.tem.data.mapper.Mapper
 import com.tem.domain.entity.Pokemon
-import com.tem.domain.entity.Sprites
 import java.io.Serializable
 
 /**

@@ -4,7 +4,6 @@ import androidx.lifecycle.*
 import com.tem.plate.util.ErrorHandler
 import com.tem.plate.util.structure.arch.Event
 import com.tem.plate.util.structure.navigation.NavData
-import com.tem.plate.util.viewmodels.DialogData
 import com.tem.plate.util.viewmodels.Placeholder
 import io.reactivex.disposables.CompositeDisposable
 import org.koin.core.KoinComponent
