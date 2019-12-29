@@ -14,9 +14,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     dataBinding {
         enabled = true
     }
@@ -24,29 +26,27 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.tem.pokedex"
+        applicationId "com.tem.plate"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
         testInstrumentationRunner "androidx.menu_revenue_types.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
     }
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         }
 
         staging {
-            applicationIdSuffix ".staging"
             buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         }
 
         debug {
-            applicationIdSuffix ".debug"
+            testCoverageEnabled = true
             buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         }
     }
@@ -58,22 +58,55 @@ dependencies {
     implementation project(':domain')
     implementation project(":data")
 
-    implementation "com.google.android.material:material:$materialVersion"
-    implementation "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
-    implementation "com.jakewharton.rxbinding3:rxbinding:$rxBindingVersion"
-    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleExtensionsVersion"
-    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
-    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+    // android support
+    implementation "androidx.appcompat:appcompat:$androidXAppCompatVersion"
+    implementation "com.google.android.material:material:1.0.0"
+    implementation "org.koin:koin-android-viewmodel:$koinVersion"
 
+    // LiveData + ViewModel
+    api "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-rc02"
+
+    // glide
     implementation "com.github.bumptech.glide:glide:$glideVersion"
     kapt "com.github.bumptech.glide:compiler:$glideVersion"
 
-    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
 
-    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
-    testImplementation 'androidx.test:core:1.2.0'
+    // Koin Testing
+    androidTestImplementation ("org.koin:koin-test:$koinVersion")
+    androidTestImplementation "androidx.test:core:$androidxTestVersion"
 
-    testImplementation 'org.mockito:mockito-core:2.7.22'
-    testImplementation 'org.assertj:assertj-core:3.12.2'
+    // Android X and Espresso Testing
+    androidTestImplementation "androidx.test:runner:$androidxTestVersion"
+    androidTestImplementation "androidx.test:rules:$androidxTestVersion"
+    androidTestImplementation "androidx.test:monitor:$androidxTestVersion"
+    androidTestImplementation "androidx.test.ext:junit:1.1.1"
+    androidTestImplementation "com.google.code.findbugs:jsr305:2.0.1"
+    androidTestImplementation "androidx.test.ext:truth:1.2.0"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$androidxEspressoVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$androidxEspressoVersion"
+
+    testImplementation "androidx.test:runner:$androidxTestVersion"
+    testImplementation "androidx.test:rules:$androidxTestVersion"
+    testImplementation "androidx.test:monitor:$androidxTestVersion"
+    testImplementation "androidx.test.ext:junit:1.1.1"
+    testImplementation "com.google.code.findbugs:jsr305:2.0.1"
+    testImplementation "androidx.test.ext:truth:1.2.0"
+    testImplementation "androidx.test.espresso:espresso-core:$androidxEspressoVersion"
+    testImplementation "androidx.test.espresso:espresso-contrib:$androidxEspressoVersion"
+    testImplementation "androidx.test.espresso:espresso-intents:$androidxEspressoVersion"
+    testImplementation "org.robolectric:robolectric:4.3"
+    testImplementation ("org.koin:koin-test:$koinVersion")
+    testImplementation "androidx.test:core:$androidxTestVersion"
+    android {
+        testOptions.unitTests.includeAndroidResources = true
+    }
+    // Fragments testing
+    debugImplementation "androidx.fragment:fragment-testing:1.2.0-rc04"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
 }

@@ -2,12 +2,15 @@
     <!--
         GLOBAL
     -->
-    <string name="app_name">Pokedex V2</string>
-    <string name="pokemon_title">Pokemon</string>
+    <string name="app_name">Template</string>
+    <string name="title">The marvelous pokemon template</string>
 
     <!--
         DIALOG
     -->
     <string name="dialog_confirm">Confirm</string>
     <string name="dialog_cancel">Cancel</string>
+
+    <string name="global_ok">OK</string>
+    <string name="global_cancel">Cancel</string>
 </resources>

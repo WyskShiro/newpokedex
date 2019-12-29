@@ -3,6 +3,7 @@ package com.tem.data.entity
 import com.google.gson.annotations.SerializedName
 import com.tem.data.mapper.Mapper
 import com.tem.domain.entity.Pokemon
+import com.tem.domain.util.ApiFieldsException
 import java.io.Serializable
 
 /**
@@ -29,8 +30,14 @@ data class ApiPokemon(
 
     object ApiPokemonToPokemonMapper : Mapper<ApiPokemon, Pokemon>() {
         override fun transform(t: ApiPokemon) = Pokemon(
-            id = t.getPokemonId(),
-            name = t.name,
+            id = t.getPokemonId() ?: throw ApiFieldsException(
+                this,
+                "An ApiPokemon should always have an ID"
+            ),
+            name = t.name ?: throw ApiFieldsException(
+                this,
+                "An ApiPokemon should always have an name"
+            ),
             url = t.url,
             sprites = t.sprites?.run(ApiSprites.ApiSpriteToSprite::transform),
             types = ApiPokemonSlotType.ApiPokemonSlotTypeToPokemonType.transform(t.types)

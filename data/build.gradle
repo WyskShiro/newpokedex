@@ -18,6 +18,7 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         versionCode 1
         versionName "1.0.0"
     }
@@ -26,15 +27,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         }
 
         staging {
-            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         }
 
         debug {
-            buildConfigField "String", "API_URL", "\"$rootProject.ext.apiURL\""
         }
     }
 }
@@ -44,8 +42,8 @@ dependencies {
 
     api "com.squareup.retrofit2:retrofit:$retrofitVersion"
     api "com.squareup.retrofit2:converter-gson:$retrofitVersion"
-    api "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$retroFitRxJavaAdapterVersion"
-    api "androidx.appcompat:appcompat:$appCompatVersion"
-    api "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+    implementation "androidx.room:room-runtime:$roomVersion"
+    implementation "androidx.appcompat:appcompat:$androidXAppCompatVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
 }
 

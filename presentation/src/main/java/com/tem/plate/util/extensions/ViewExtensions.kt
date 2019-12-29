@@ -4,10 +4,8 @@ import android.text.Editable
 import android.view.View
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputLayout
-import com.tem.plate.util.resources.SimpleTextWatcher
-import io.reactivex.disposables.Disposable
-import io.reactivex.subjects.PublishSubject
-
+import com.tem.plate.util.resources.SafeClickListener
+import com.tem.plate.util.resources.TextWatcher
 
 // TextInputLayout
 fun TextInputLayout.getText(): String? {
@@ -19,21 +17,21 @@ fun TextInputLayout.observeChanges(callback: (String) -> Unit) {
 }
 
 // TextView
-fun TextView.observeChanges(callback: (String) -> Unit): Disposable? {
-    val subject = PublishSubject.create<String>()
-    addTextChangedListener(object : SimpleTextWatcher() {
+fun TextView.observeChanges(callback: (String) -> Unit) {
+    addTextChangedListener(object : TextWatcher() {
         override fun afterTextChanged(s: Editable) {
-            subject.onNext(s.toString())
+            callback(s.toString())
         }
     })
-    return subject.subscribe { callback(it) }
 }
 
-//View
-fun View.setOnClickListener(callback: () -> Unit) {
-    this.setOnClickListener { callback.invoke() }
+// View
+fun View.setOnClickHandler(callback: () -> Unit) {
+    val intervalInMillis = 1000
+    SafeClickListener(callback, intervalInMillis).apply {
+        setOnClickListener(this::onClick)
+    }
 }
-
 
 // views
 

@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment
 import com.tem.plate.pokemon.PokemonActivity
 import com.tem.plate.util.extensions.observeEvent
 import com.tem.plate.util.extensions.shortToast
+import com.tem.plate.util.extensions.showDialog
+import com.tem.plate.util.viewmodels.DialogData
 
 abstract class BaseFragment : Fragment() {
 
@@ -35,6 +37,12 @@ abstract class BaseFragment : Fragment() {
         baseViewModel.toast.observeEvent(this, ::onNextToast)
     }
 
+    open fun onGetDialog(dialogData: DialogData?) {
+        dialogData?.let {
+            dialog?.dismiss()
+            dialog = activity?.showDialog(it)
+        }
+    }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             android.R.id.home -> {

@@ -1,7 +1,6 @@
 package com.tem.plate.util.dependecyinjector
 
 import com.google.gson.GsonBuilder
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import com.tem.data.BuildConfig
 import com.tem.data.api.ApiService
 import org.koin.dsl.module
@@ -19,7 +18,6 @@ val requestModule = module {
                         .create()
                 )
             )
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build().create(ApiService::class.java)
     }
 }

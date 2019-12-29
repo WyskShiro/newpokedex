@@ -3,8 +3,8 @@ package com.tem.domain.entity
 import java.io.Serializable
 
 data class Pokemon(
-    var id: Int? = null,
-    var name: String? = null,
+    var id: Int,
+    var name: String,
     var url: String? = null,
     var sprites: Sprites? = null,
     var types: List<PokemonType>? = null

@@ -6,13 +6,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tem.domain.entity.Pokemon
-import com.tem.plate.R
 import com.tem.plate.databinding.FragmentPokemonListBinding
 import com.tem.plate.util.extensions.observeAction
+import com.tem.plate.util.extensions.observeEvent
 import com.tem.plate.util.structure.base.BaseFragment
 import com.tem.plate.util.structure.base.BaseViewModel
 import org.koin.android.ext.android.inject
@@ -47,6 +46,7 @@ class PokemonListFragment : BaseFragment() {
         with(viewModel) {
             pokemonList.observeAction(viewLifecycleOwner, ::updatePokemonList)
             pokemonDetails.observeAction(viewLifecycleOwner, ::showFragmentPokemonDetails)
+            dialog.observeEvent(viewLifecycleOwner, ::onGetDialog)
         }
     }
 
@@ -73,7 +73,11 @@ class PokemonListFragment : BaseFragment() {
 
     private fun showFragmentPokemonDetails(pokemon: Pokemon?) {
         pokemon?.let {
-            navController.navigate(PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsBottomSheetDialog(it))
+            navController.navigate(
+                PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsBottomSheetDialog(
+                    it
+                )
+            )
         }
     }
 

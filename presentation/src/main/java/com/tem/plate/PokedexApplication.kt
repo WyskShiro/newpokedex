@@ -15,6 +15,7 @@ class PokedexApplication : Application() {
             androidContext(applicationContext)
             modules(
                 listOf(
+                    apiModule,
                     interactorModule,
                     repositoryModule,
                     applicationModule,

@@ -83,7 +83,62 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/main/java/com/ufms/mediadorpedagogico/data/remote/client/AuthInterceptor.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/main/java/com/ufms/mediadorpedagogico/data/remote/client/RequestException.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/main/java/com/ufms/mediadorpedagogico/data/storage/PreferencesCache.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/main/java/com/ufms/mediadorpedagogico/domain/interactor/user/FormFields.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/main/java/com/ufms/mediadorpedagogico/presentation/main/dashboard/DashboardActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/test/java/com/ufms/mediadorpedagogico/about/AboutTests.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/test/java/com/ufms/mediadorpedagogico/api/RequestExceptionTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/test/java/com/ufms/mediadorpedagogico/bullying/BullyingTests.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/test/java/com/ufms/mediadorpedagogico/guild/GuildTests.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/test/java/com/ufms/mediadorpedagogico/homework/_1_RequestFirstPageHomework.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/test/java/com/ufms/mediadorpedagogico/notification/ManageNewsTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/mediador/front-android/app/src/test/java/com/ufms/mediadorpedagogico/notification/ManageNoticesTest.kt">
           <value>
             <set />
           </value>
@@ -504,6 +559,111 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/presentation/src/test/java/com/tem/plate/pokemon/PokemonTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/data/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/data/src/main/java/will/shiro/data/api/ApiClient.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/data/src/main/java/will/shiro/data/entity/ApiFruit.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/data/src/main/java/will/shiro/data/request/RequestException.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/domain/src/main/java/will/shiro/domain/boundary/FruitRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/domain/src/main/java/will/shiro/domain/entity/Issue.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/build/generated/source/kapt/debug/will/shiro/theissues/databinding/ItemListIssueBindingImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/java/will/shiro/theissues/dagger/module/ApiProviderModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/java/will/shiro/theissues/issue/detail/IssueDetailFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/java/will/shiro/theissues/issue/list/IssueListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/java/will/shiro/theissues/util/bindingadapter/IssueListBindingAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/java/will/shiro/theissues/util/viewmodels/DialogData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/res/drawable/issue_closed.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/res/drawable/issue_open.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/res/layout/fragment_issues_details.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/res/layout/item_list_issue.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/res/navigation/issue_navigation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/res/values/dimens.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/recrutamento-android-jya-willshiro/presentation/src/main/res/values/styles.xml">
           <value>
             <set />
           </value>

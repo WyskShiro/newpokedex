@@ -2,17 +2,22 @@ package com.tem.domain.interactor.pokemon
 
 import com.tem.domain.boundary.PokemonRepository
 import com.tem.domain.entity.Pokemon
-import io.reactivex.Single
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 class GetPokemon constructor(
     private val repository: PokemonRepository
 ) {
 
-    fun list(offset: Int? = 0, limit: Int? = 20): Single<List<Pokemon>> {
-        return repository.getPokemonList(offset, limit)
+    suspend fun list(offset: Int? = 0, limit: Int? = 20): List<Pokemon>? {
+        return withContext(Dispatchers.IO) {
+            repository.getPokemonList(offset, limit)
+        }
     }
 
-    fun details(id: Int): Single<Pokemon> {
-        return repository.getPokemonDetails(id)
+    suspend fun details(id: Int): Pokemon? {
+        return withContext(Dispatchers.IO) {
+            repository.getPokemonDetails(id)
+        }
     }
 }
