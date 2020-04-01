@@ -1,5 +1,4 @@
-# Pokedex V2
-Where is the V1 ? Hidden because it's ugly.
+# Pokedex 
 
 The V2 uses more useful features and it's more organized (Clean Architecture, MVVM, Livedata, RxJava)
 
