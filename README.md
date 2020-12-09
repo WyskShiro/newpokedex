@@ -1,6 +1,6 @@
 # Pokedex 
 
-The V2 uses more useful features and it's more organized (Clean Architecture, MVVM, Livedata, RxJava)
+The V2 uses more useful features and more organized (Clean Architecture, MVVM, Livedata, RxJava)
 
 Some images:
 <div style="display: flex;">
